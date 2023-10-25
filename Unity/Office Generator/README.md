@@ -47,5 +47,4 @@ Childs:
     
   - empty gameobject name: (Docks: "T","R","B","L")
 
-![image](https://github.com/Axstr0n/Unity/assets/111118363/0b5ff994-19bf-4c60-a294-9952a7d499c9)
 
