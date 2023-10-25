@@ -1,0 +1,151 @@
+:root{
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: white;
+}
+
+body{
+    background-color: rgb(40,40,40);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    width: 200px;
+    margin-inline: auto;
+}
+
+.header{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.board-wrapper{
+    width: 180px;
+    aspect-ratio: 1/1;
+    margin-bottom: 10px;
+}
+
+.board{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    /*grid-template-rows: repeat(10, 10%);
+    grid-template-columns: repeat(10, 10%);*/
+    background-color: aquamarine;
+    border: solid 1px grey;
+}
+.cell{
+    width: 100%;
+    height: 100%;
+    /*box-shadow: 0 0 1px black;*/
+    border: solid 1px grey;
+}
+.cell-ship{
+    position: relative;
+    overflow: hidden;
+    border: none;
+    background-color: black;
+}
+/*
+.cell-ship::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}*/
+.bomb {
+    width: 100%; /* Adjust the width as needed */
+    height: 100%; /* Adjust the height as needed */
+    background-color: transparent; /* Background color for the div */
+    position: relative; /* Position relative to place the pseudo-elements */
+}
+
+/* Style for the white dot in the center */
+
+.bomb::after {
+    content: ''; /* Empty content to create pseudo-elements */
+    width: 10px; /* Adjust the size of the dot */
+    height: 10px; /* Adjust the size of the dot */
+    background-color: #ffffff; /* Color of the dot (white) */
+    border-radius: 50%; /* Makes it a circle */
+    position: absolute; /* Position absolute to place the pseudo-elements */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the pseudo-elements precisely */
+}
+.buttons{
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    
+}
+.buttons button{
+    margin-bottom: 2px;
+    padding: 5px;
+    background-color: rgb(60,60,60);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#heatmaps{
+    width: 180px;
+    margin-bottom: 6px;
+}
+
+.heatmap-board{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    /*grid-template-rows: repeat(10, 10%);
+    grid-template-columns: repeat(10, 10%);*/
+    background-color: aquamarine;
+    border: solid 1px grey;
+}
+
+.heatmap-cell{
+    color: black;
+    width: 100%;
+    aspect-ratio: 1/1;
+    text-align: center;
+    vertical-align: middle;
+    /*box-shadow: 0 0 1px black;*/
+    border: solid 1px grey;
+    font-size: 5px;
+    text-align: center;
+}
+
+.stats{
+    
+}
+.tries{
+    display: flex;
+}
+.tries .tries-label{
+    margin-right: 5px;
+}
+.tries .tries-number{
+
+}
+.average-tries{
+    display: flex;
+}
+.average-tries .tries-label{
+    margin-right: 5px;
+}
+.averag-tries .tries-number{
+
+}
