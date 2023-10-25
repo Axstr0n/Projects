@@ -1,6 +1,6 @@
 # Office Generator
 
-<img width="414" alt="image" src="https://github.com/Axstr0n/Unity/assets/111118363/ab61e66b-c0d5-4f72-9518-5c25f33ec91f">
+https://github.com/Axstr0n/Projects/blob/main/Unity/Office%20Generator/example.png?raw=true
 
 
 **Room**
