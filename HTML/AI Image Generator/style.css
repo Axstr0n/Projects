@@ -1,0 +1,130 @@
+
+:root{
+    --bg1: rgb(50,50,50);
+    --bg2: rgb(44, 36, 46);
+    --bg3: rgb(40,40,40);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: white;
+    font-size: 16px;
+}
+button{
+    cursor: pointer;
+}
+body{
+    background: linear-gradient(to right, var(--bg1), var(--bg2));
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container{
+    background-color: var(--bg3);
+    width: 60%;
+    margin-inline: auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 800px;
+}
+.container h1{
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.container p{
+    margin-bottom: 10px;
+}
+.generation-form{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.generation-form input{
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 30px;
+    
+}
+.generation-form .model{
+    flex: 1;
+}
+.generation-form .model select{
+    height: 30px;
+    background-color: var(--bg1);
+    padding-left: 5px;
+}
+.generation-form button{
+    margin-left: 5px;
+    min-height: 30px;
+    padding: 0px 10px;
+    cursor: pointer;
+    
+}
+.generation-form button:disabled{
+    opacity: 0.6;
+}
+.generation-form input, .generation-form button{
+    background-color: transparent;
+    border: solid 1px white;
+    border-radius: 10px;
+}
+
+#loading{
+    display: none;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.result{
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#loading::after{
+    content: 'Generating';
+    animation: animateLoading 2s infinite;
+}
+#loading{
+    margin-bottom: 10px;
+}
+@keyframes animateLoading {
+    0%   {content: 'Generating';}
+    25%  {content: 'Generating.';}
+    50%  {content: 'Generating..';}
+    75%  {content: 'Generating...';}
+    100% {content: 'Generating';}
+  }
+
+#image-grid{
+    /*display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+    max-width: 80%;
+    row-gap: 20px;
+}
+
+#image-grid img{
+    width: 45%;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    min-width: 200px;
+    background-color: var(--bg1);
+}
+

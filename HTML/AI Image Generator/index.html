@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <h1>Ai Image Generator</h1>
+        <p>Write your prompt in input field. Longer prompt will more likely give you result that you would like. Below you can switch between some generation models.</p>
+        <form class="generation-form">
+            <input type="text" id="user-prompt" placeholder="Type prompt..." autocomplete="off">
+            <div class="model">
+                Model:
+                <select name="" id="model-select">
+                    <option value="stabilityai/stable-diffusion-xl-base-1.0">stabilityai/stable-diffusion-xl-base-1.0</option>
+                    <option value="Deci/DeciDiffusion-v1-0">Deci/DeciDiffusion-v1-0</option>
+                    <option value="runwayml/stable-diffusion-v1-5">runwayml/stable-diffusion-v1-5</option>
+                    <option value="prompthero/openjourney">prompthero/openjourney</option>
+                </select>
+            </div>
+            
+            <button type="button" id="generate-button">Generate</button>
+        </form>
+        <div class="result">
+            <div id="loading"></div>
+            <div id="image-grid"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

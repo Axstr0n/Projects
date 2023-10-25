@@ -1,0 +1,156 @@
+
+:root{
+    --bg1: rgb(40, 40, 40);
+    --bg2: rgb(50, 50, 50);
+    --bg3: rgb(60, 60, 60);
+    --bg4: rgb(70,70,70);
+}
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+button{
+    cursor: pointer;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg1);
+}
+.container{
+    background-color: var(--bg2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    width: 300px;
+}
+.header{
+    color: white;
+    margin-bottom: 10px;
+}
+.stats{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--bg2);
+    border-radius: 10px;
+    padding: 8px;
+    align-items: center;
+}
+.stats .time, .stats .flags{
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    padding: 5px 8px;
+    border-radius: 10px;
+}
+.stats .time .time-icon{
+    margin-right: 10px;
+    width: 20px;
+}
+.stats .time #time-counter{
+    
+}
+.stahhhts .flags{
+    background-color: whitesmoke;
+    align-items: center;
+    display: flex;
+    padding: 3px;
+}
+.stats .flags .flag-icon{
+    margin-right: 10px;
+    width: 20px;
+}
+.stats .flags #flag-counter{
+    
+}
+
+.board-wrapper{
+    flex: 1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.board{
+    display: grid;
+    /*grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(10, 10%);
+    min-width: 100%;
+    min-height: 300px;*/
+    aspect-ratio: 1/1;
+}
+.cell{
+    color: black;
+    width: 100%;
+    height: 100%;
+    margin-bottom: -30%;
+    background-color: var(--bg4);
+    border: solid 1px var(--bg2);
+    font-size: 100%;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.cell-revealed{
+    background-color: lightgray;
+}
+.cell-flag{
+    width: 70%;
+    height: 70%;
+    vertical-align: middle;
+}
+.cell-bomb{
+    width: 70%;
+    height: 70%;
+    vertical-align: middle;
+}
+.button-bomb-revealed{
+    background-color: rgb(187, 0, 0);
+    border: solid 3px black;
+}
+.result{
+    display: none;
+    width: 100%;
+    text-align: center;
+    font-size: 80px;
+    padding: 50px 0px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 40%;
+}
+.flag-toggle{
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.flag-toggle-button{
+    background-color: whitesmoke;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: solid 1px transparent;
+}
+.placing-flags-on{
+    
+}
+.buttons{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+}
+#reveal-all-button, #reveal-bombs-button, #new-game-button{
+    background-color: whitesmoke;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}

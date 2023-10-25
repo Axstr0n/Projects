@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <i class="fa-solid fa-clock"></i>
+    <div class="container">
+        <div class="header">
+            <h1>MINESWEEPER</h1>
+        </div>
+        <div class="stats">
+            <div class="time">
+                <img src="Icons/clock-solid.svg" class="time-icon" alt="">
+                <i class="fa-solid fa-clock"></i>
+                <div id="time-counter">000</div>
+            </div>
+            <div class="flags">
+                <img src="Icons/flag.svg" class="flag-icon" alt="">
+                <div id="flag-counter">0</div>
+            </div>
+        </div>
+        <div class="board-wrapper" id="board-wrapper">
+            
+        </div>
+        <div class="result" id="result"></div>
+        <div class="flag-toggle">
+            <button id="flag-toggle-button" class="flag-toggle-button">Reveal</button>
+        </div>
+        <div class="buttons">
+            <button id="reveal-all-button">REVEAL ALL</button>
+            <button id="reveal-bombs-button">REVEAL BOMBS</button>
+            <button class="new-game-button" id="new-game-button">NEW GAME</button>
+        </div>
+    </div>
+</body>
+</html>

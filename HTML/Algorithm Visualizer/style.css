@@ -1,0 +1,204 @@
+:root{
+    --bg1: rgb(40,40,40);
+    --bg2: rgb(50,50,50);
+    --bg3: rgb(60,60,60);
+    --blue: rgb(0, 153, 255);
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+}
+body{
+    background-color: var(--bg2);
+    height: 100vh;
+    overflow: hidden;
+}
+button{
+    cursor: pointer;
+    height:30px;
+    padding: 5px 10px;
+    background-color: var(--bg1);
+    border: none;
+    border-radius: 5px;
+}
+button:disabled{
+    opacity: 0.7;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 90%;
+    margin-top: 2.5%;
+    margin-left: 5%;
+}
+.header{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 2% 1%;
+    background-color: var(--bg1);
+    border: none;
+    border-radius: 10px;
+}
+.title{
+    font-size: 30px;
+    font-weight: bold;
+}
+/* SET UP*/
+.set-up{
+    background-color: var(--bg3);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    padding-top: 10px;
+}
+.set-up .section-title{
+    width: 100px;
+}
+.set-up-buttons{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.set-up input{
+    
+}
+.number-of-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.number-of-data-label{
+
+}
+.number-of-data-slider{
+    background-color: transparent;
+    display: flex;
+    min-width: 160px;
+    margin-right: 10px;
+    justify-content: space-between;
+    padding: 5px;
+}
+.number-of-data-slider input{
+    
+}
+.number-of-data{
+    
+}
+.time-interval{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.time-interval-slider{
+    background-color: transparent;
+    display: flex;
+    min-width: 190px;
+    padding: 5px;
+}
+.time-interval-slider input{
+    margin-right: 10px;
+}
+.time-interval{
+    margin-right: auto;
+}
+/* ALGORITHMS */
+.algorithms{
+    background-color: var(--bg3);
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+}
+.algorithms .section-title{
+    width: 100px;
+}
+.algorithm-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.algorithm-buttons button{
+    
+}
+.active-algorithm-button{
+    background-color: var(--blue);
+}
+.disabled-button{
+    opacity: 0.7;
+}
+/* VISUALIZER */
+.visualizer-container{
+    background-color: var(--bg3);
+    flex: 1;
+}
+.visualizer{
+    position: relative;
+    width: 95%;
+    height: 95%;
+    top: 2.5%;
+    left: 2.3%;
+}
+.element{
+    width: 1%;
+    height: 50px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    border: solid 1px var(--bg1);
+}
+.element-complete{
+    background-color: rgb(0, 97, 0);
+}
+
+/* BUBBLE SORT */
+
+.bubble-sort-current-element{
+    background-color: red;
+}
+.bubble-sort-comparing-element{
+    background-color: yellowgreen;
+}
+.bubble-sort-switching-element{
+    background-color: orange;
+}
+
+/* SELECTION SORT */
+
+.selection-sort-checking-element{
+    background-color: yellowgreen;
+}
+.selection-sort-min-element{
+    background-color: orange;
+}
+.selection-sort-current-element{
+    background-color: red;
+}
+
+/* INSERTION SORT */
+
+.insertion-sort-current-element{
+    background-color: red;
+}
+
+.insertion-sort-bigger-element{
+    background-color: orange;
+}
+.insertion-sort-smaller-element{
+    background-color: yellowgreen;
+}
+
+/* MERGE SORT */
+
+.merge-sort-smaller-element{
+    background-color: yellowgreen;
+}
+.merge-sort-bigger-element{
+    background-color: orange;
+}

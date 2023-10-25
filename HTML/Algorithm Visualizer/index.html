@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithm Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title">ALGORITHM VISUALIZER</div>
+        </div>
+        <div class="set-up">
+            <div class="section-title">Set Up:</div>
+            <div class="set-up-buttons">
+                <button onclick="Sort([1,5,8,2,6,9,11,46,37,3])">Test</button>
+                <button id="reset-button">Reset</button>
+                <button id="create-button">Create</button>
+                <div class="number-of-data">
+                    <div class="number-of-data-label">Array length</div>
+                    <div class="number-of-data-slider">
+                        <input type="range" class="slider" id="number-of-data-input" step="5">
+                        <div class="number-of-data-num" id="number-of-data">20</div>
+                    </div>
+                </div>
+                <div class="time-interval">
+                    <div class="time-interval-label">Time interval</div>
+                    <div class="time-interval-slider">
+                        <input type="range" list="tickmarks" min="0" max="4" value="3" class="slider" id="time-interval-input" step="1">
+                        <datalist id="tickmarks">
+                            <option value="0">
+                            <option value="1">
+                            <option value="2">
+                            <option value="3">
+                            <option value="4">
+                          </datalist>
+                        <div class="time-interval" id="time-interval"></div>
+                        <div class="time-interval-unit"> ms</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="algorithms">
+            <div class="section-title">Algorithms:</div>
+            <div class="algorithm-buttons">
+                <button id="bubble-sort-button">Bubble Sort</button>
+                <button id="selection-sort-button">Selection Sort</button>
+                <button id="insertion-sort-button">Insertion Sort</button>
+                <!--<button id="merge-sort-button">Merge Sort</button>-->
+            </div>
+        </div>
+        <div class="visualizer-container">
+            <div class="visualizer" id="visualizer">
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
